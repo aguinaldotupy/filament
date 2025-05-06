@@ -105,7 +105,7 @@ trait HasCellState
 
         $state = data_get($record, $this->getName());
 
-        if (!($record instanceof Model)) {
+        if (! ($record instanceof Model)) {
             return $state;
         }
 
